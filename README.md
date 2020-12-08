@@ -1,2 +1,2 @@
 # ideas-and-thoughts
-Some 
+This repository provides some ideas and thoughts about tableaunoir.
