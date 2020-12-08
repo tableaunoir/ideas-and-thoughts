@@ -1,0 +1,2 @@
+# ideas-and-thoughts
+Some 
