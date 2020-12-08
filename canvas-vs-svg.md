@@ -2,7 +2,7 @@ Question: should Tableaunoir use Canvas or SVG? (currently it is canvas-based)
 
 |   | Canvas | SVG |
 |---|--------|-----|
-| Storage | Just a big 2X2 matrix :)       | Heavy to store 10000 different lines, small details    |
+| Storage | :heavy_check_mark: Just a big 2X2 matrix :)       | Heavy to store 10000 different lines, small details    |
 | Drawing | Allow for pressure change during the drawing  | Difficult for pressure change   |
 | Magnets | Easy: extract a portion of the canvas    | Difficult to implement    |
 | Erasing | Very easy: draw a transparent line. Handle backgrounds       | Fake erasing by adding a new object    |
