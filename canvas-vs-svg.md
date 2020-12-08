@@ -1,4 +1,4 @@
-Question: should Tableaunoir use Canvas or SVG?
+Question: should Tableaunoir use Canvas or SVG? (currently it is canvas-based)
 
 |   | Canvas | SVG |
 |---|--------|-----|
