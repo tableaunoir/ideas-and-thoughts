@@ -2,11 +2,13 @@ Question: should Tableaunoir use Canvas or SVG? (currently it is canvas-based)
 
 |   | Canvas | SVG |
 |---|--------|-----|
-| Storage | :heavy_check_mark: Just a big 2X2 matrix :)       | Heavy to store 10000 different lines, small details    |
-| Drawing | Allow for pressure change during the drawing  | Difficult for pressure change   |
-| Magnets | Easy: extract a portion of the canvas    | Difficult to implement    |
-| Erasing | Very easy: draw a transparent line. Handle backgrounds       | Fake erasing by adding a new object    |
-| Remove an object (eg. a line) | A bit difficult because there are no objects  | Easy  |
-| Move an object (eg. a circle) | Impossible | Easy   |
-| Mono user Undo/redo | Easy: store the full canvas or portion of it       | Easy: remove the last object   |
-| Multi-user Undo/redo | Difficult to be properly implemented      | Easy: remove the last object   |
+| Drawing | :heavy_check_mark: Allow for pressure change during the drawing. Allow for very nice effect (chalk effect at some point? brushes?)  | :x: Difficult for pressure change   |
+| Magnets | :heavy_check_mark: Easy: extract a portion of the canvas    | :x: Difficult to implement    |
+| Erasing | :heavy_check_mark: Easy: draw a transparent line. Handle backgrounds       | :x: Fake erasing by adding a new object    |
+| Remove an object (eg. a line) | :x: A bit difficult because there are no objects  | :heavy_check_mark: Easy  |
+| Move an object (eg. a circle) | :x: Impossible | :heavy_check_mark: Easy   |
+| Big blackboard | :x: Memory issues   | :heavy_check_mark: |
+| Complex blackboard | :heavy_check_mark: Just a big 2X2 matrix :)       | :x: Heavy to store 100000 different lines, small details.    |
+| Zooming   | :x: Pixels  | :heavy_check_mark: Always nice |
+| Mono user Undo/redo | :heavy_check_mark: Easy: store the full canvas or portion of it       | :heavy_check_mark: Easy: remove the last object   |
+| Multi-user Undo/redo | :x: Difficult to be properly implemented      | :heavy_check_mark: Easy: remove the last object   |
